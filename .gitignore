@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Chrome profile: holds cookies and the logged-in MAX session. Never commit.
+chrome_profile_*/
+
+# Captured traffic and downloaded bundles: personal data.
+captures/
+js/
+
+*.log
+.DS_Store

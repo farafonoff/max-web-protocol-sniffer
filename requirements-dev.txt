@@ -1,0 +1,10 @@
+# Test-only dependencies. test_e2e.py drives real Chrome against a local mock
+# MAX server and needs a websocket server plus an LZ4 reference implementation
+# to build valid compressed frames.
+#
+#   .venv/bin/pip install -r requirements-dev.txt
+#
+# lz4 is only a reference for test_frames.py: frames.py implements LZ4 block
+# decompression itself and needs no lz4 at runtime.
+websockets==17.2
+lz4==4.4.4
